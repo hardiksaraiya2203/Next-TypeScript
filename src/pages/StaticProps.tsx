@@ -4,9 +4,6 @@ export const getStaticProps = async () => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/albums')
     let album = await res.json();
-    // console.log(album);
-
-
     return {
         props: {
             a: album
